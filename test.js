@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const server = http.createServer((req, res) => {
-  let filePath = "./test.html";
+  let filePath = "./counter.html";
   if (req.url !== "/") {
     filePath = "." + req.url;
   }
